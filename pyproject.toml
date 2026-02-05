@@ -5,8 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "fastapi[standard]>=0.128.1",
     "ipykernel>=7.1.0",
     "kagglehub>=0.4.2",
+    "pillow>=12.1.0",
+    "streamlit>=1.54.0",
     "timm>=1.0.24",
     "torch>=2.10.0",
     "torchmetrics>=1.8.2",
