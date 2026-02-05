@@ -18,7 +18,6 @@ model.load_state_dict(torch.load("src/deepfake_model.pth"))
 model.eval()
 
 
-
 app = FastAPI()
 
 
@@ -26,9 +25,7 @@ app = FastAPI()
 def read_root():
     return {"status": "Deepfake Detection API running"}
 
-# -----------------------
-# Prediction endpoint
-# -----------------------
+
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
     # Read image
